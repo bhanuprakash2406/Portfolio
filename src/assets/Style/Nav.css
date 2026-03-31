@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;  
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+.nav .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav .title span{
+    display: flex;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    justify-content: center;
+    background: linear-gradient(45deg, #065af5, #7bc3fe);
+    color: white;
+}
+.nav .title h1{
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: bold;
+    margin-right: 20px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.nav ul li a:hover{
+    color: #66a0f5;
+    background-color: #d4d4d6;
+    border-radius: 5px;
+}
+.nav ul li .active:not(:nth-child(6) a){
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(45deg, #065af5, #7bc3fe);
+}
+.nav ul li:nth-child(6) a{
+    color: white;
+    background-color: #0365f9;
+}
+.nav ul li:hover:nth-child(6) a{
+    color: white;
+    background-color: #013685;
+}
+.nav ul li a:active{
+    background-color: #c6d9f7;
+    color: #131313;
+    border-radius: 5px;
+}
+.nav ul li a:focus{
+    background-color: #c6d9f7;
+    color: #131313;
+    border-radius: 5px;
+}
+.nav .menu{
+    display: none;
+}
+.menu_icon{
+    font-size: 32px;
+    cursor: pointer;
+}
+.nav .end{
+    display: none;
+}
+.nav .end .open_list{
+    display: flex;
+    position: absolute;
+    background: rgba(242, 241, 241, 0.55);
+    width: 90%;
+    left: 50%;
+    top: 330%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    list-style-type: none;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+@media (max-width: 1068px) {
+    .nav .end {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+    }
+    .menu_icon {
+        display: block;
+    }
+    .nav .menu_icon:active li {
+        display: block;
+    }
+}   

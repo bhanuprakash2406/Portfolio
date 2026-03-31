@@ -1,0 +1,98 @@
+#process{
+    background: #ffffff;
+    background: linear-gradient(129deg, rgba(255, 255, 255, 1) 0%, rgb(203, 200, 243) 100%);
+    padding: 30px 0;
+}
+.process{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1rem auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.process-heading{
+    width: 50%;
+}
+.process-heading h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.process-heading p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.group{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    width: 60%;
+}
+.process-container{
+    width: 80%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.process-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+.process-container h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}.process-container p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+.process-container .icon{
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #4a90e2;
+    border-radius: 10px;
+    background-color: white;
+}
+.process-container:hover .icon{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #4a90e2;
+}
+@media (max-width: 928px) {
+    .process {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .process-heading {
+        width: 100%;
+    }
+    .process-heading h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .group{
+        width: 100%;
+    }
+    .process-container {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .process {
+        width: 80%;
+    }
+    .group {
+        grid-template-columns: 1fr;
+    }
+}
