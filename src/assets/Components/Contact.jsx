@@ -34,7 +34,7 @@ const Contact = () => {
               <TfiEmail className='contact-icon'/>
               <div className="data">
                 <h3>Email :</h3>
-                <p><a href="mailto:bhanuprakash2406@gmail.com">bhanuprakash2406@gmail.com</a></p>
+                <p><a href="mailto:bhanuprakash2406@gmail.com">bhanuprakash2606@gmail.com</a></p>
               </div>
             </div>
             <div className="contact-item">
