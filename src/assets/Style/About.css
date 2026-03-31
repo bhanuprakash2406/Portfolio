@@ -98,7 +98,9 @@
 .section-profile ul li a{
     color: white;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 1068px) {
     .about {
