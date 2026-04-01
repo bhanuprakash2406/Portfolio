@@ -7,14 +7,9 @@ import '../Style/Contact.css'
 import { TfiEmail } from "react-icons/tfi";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhoneOutgoing } from "react-icons/fi";
-import { useForm, ValidationError } from '@formspree/react';
+import Form from './Form';
 
 const Contact = () => {
-
-  const [state, handleSubmit] = useForm("xnjovpen");
-  if (state.succeeded) {
-      return <p className='message'>Thanks for Contacting me!</p>;
-  }
 
   return (
    <section id='contact'>
@@ -41,40 +36,18 @@ const Contact = () => {
               <FiPhoneOutgoing className='contact-icon'/>
               <div className="data">
                 <h3>Phone :</h3>
-                <p><a href="tel:6301003350">+91 6301003350</a></p>
+                <p><a href="tel:916301003350">+91 6301003350</a></p>
               </div>
             </div>
             <div className="contact-icons">
               <p><a href='https://github.com/bhanuprakash2406' target='_blank' rel='noopener noreferrer'><FiGithub /></a></p>
               <p><a href='https://www.linkedin.com/in/bhanuprakash-karuru/' target='_blank' rel='noopener noreferrer'><FaLinkedinIn /></a></p>
               <p><a href='https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-jobseeker-profile--profile-one-frontend' target='_blank' rel='noopener noreferrer'><SiIndeed /></a></p>
-              <p><a href='https://wa.me/916301003350' target='_blank' rel='noopener noreferrer'><FaWhatsapp /></a></p>
+              <p><a href='https://wa.me/6301003350' target='_blank' rel='noopener noreferrer'><FaWhatsapp /></a></p>
             </div>
           </div>
         </div>
-        <div className="contact-form">  
-          <h2>Contact Me</h2>
-          <p>Interested in working together or have an idea to discuss? Let’s connect and build something amazing.</p>
-      <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <input id="name" type="text" name="name" placeholder='Name*'/>
-        <ValidationError prefix="Name" field="name" errors={state.errors}/>
-      </div>
-      <div className="form-group">
-        <input id="email" type="email" name="email" placeholder='Email*'/>
-        <ValidationError prefix="Email" field="email" errors={state.errors}/>
-      </div>
-      <div className="form-group">
-        <input id="location" name="location" placeholder='Location'/>
-        <ValidationError prefix="Location" field="location" errors={state.errors}/>
-      </div>
-      <div className="form-group">
-        <input id="message" name="message" placeholder='Message*'/>
-        <ValidationError prefix="Message" field="message" errors={state.errors}/>
-      </div>
-      <button type="submit" disabled={state.submitting}>Submit</button>
-    </form>
-  </div> 
+        <Form />
   </div>
         
    </section>

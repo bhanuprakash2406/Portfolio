@@ -9,6 +9,7 @@ import { SiIndeed } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 
 const About = ({ active }) => {
+
   return (
     <section id='about'>
       <div className='about'>
