@@ -18,7 +18,7 @@ const About = ({ active }) => {
             <ul>
               <li><a href='https://github.com/bhanuprakash2406' target='_blank' rel='noopener noreferrer'><FiGithub /></a></li>
               <li><a href='https://www.linkedin.com/in/bhanuprakash-karuru/' target='_blank' rel='noopener noreferrer'><FaLinkedinIn /></a></li>
-              <li><a href='https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-jobseeker-profile--profile-one-frontend' target='_blank' rel='noopener noreferrer'><SiIndeed /></a></li>
+              <li><a href='https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-menu-homepage' target='_blank' rel='noopener noreferrer'><SiIndeed /></a></li>
               <li><a href='https://wa.me/916301003350' target='_blank' rel='noopener noreferrer'><FaWhatsapp /></a></li>
             </ul>
         </div>
