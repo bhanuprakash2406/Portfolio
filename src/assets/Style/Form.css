@@ -92,9 +92,9 @@ form{
 }
 @media (max-width: 480px) {
     .contact-form input {
-        width: 90%;
+        width: 80%;
     }
     .contact-form button {
-        width: 100%;
+        width: 90%;
     }
 }
